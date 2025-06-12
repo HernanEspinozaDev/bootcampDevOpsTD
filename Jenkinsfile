@@ -2,15 +2,13 @@ pipeline {
     agent any
 
     tools {
-        // Estos nombres DEBEN coincidir con los que configuraste en "Global Tool Configuration"
         maven 'Maven 3.9.10'
-        jdk 'JDK11'
+        jdk 'JDK17'
     }
 
     stages {
         stage('Compilar') {
             steps {
-                // Ejecutamos los comandos dentro de la carpeta del proyecto
                 dir('saludoapp') {
                     sh 'mvn clean compile'
                 }
