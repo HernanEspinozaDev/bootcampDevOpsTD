@@ -1,0 +1,20 @@
+# Dependencias y paquetes
+node_modules/
+
+# Reportes y cachés de herramientas de seguridad
+dependency-check-reports/
+.trivy-cache/
+
+# Archivos de Log
+*.log
+
+# Archivos de entorno (variables de entorno)
+.env
+
+# Archivos de compilación de Java / Maven
+target/
+
+# Archivos de configuración de IDEs y editores
+.idea/
+.vscode/
+*.iml
